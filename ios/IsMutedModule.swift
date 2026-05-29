@@ -7,6 +7,9 @@ public class IsMutedModule: Module {
   public func definition() -> ModuleDefinition {
     Name("IsMuted")
 
+    // No automated iOS tests: mute detection relies on AudioServicesPlaySystemSound
+    // timing on a physical device with a real ringer switch. Verified manually via the
+    // example app. See CONTRIBUTING.md.
     AsyncFunction("isMuted") { (promise: Promise) in
       #if targetEnvironment(simulator)
       promise.reject(
