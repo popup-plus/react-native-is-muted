@@ -1,9 +1,8 @@
 # react-native-is-muted
 
 [![npm version](https://img.shields.io/npm/v/react-native-is-muted.svg?style=for-the-badge&logo=appveyor)](https://www.npmjs.com/package/react-native-is-muted)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=appveyor)](http://makeapullrequest.com)
 
-<p align="center"><img src="https://github.com/NielsOtten/react-native-is-muted/blob/main/isMutedExample.ios.gif?raw=true" alt="Showcase iOS" width="234" height="433">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/NielsOtten/react-native-is-muted/blob/main/isMutedExample.android.gif?raw=true" alt="Showcase Android" width="234" height="433"></p>
+<p align="center"><img src="https://github.com/popup-plus/react-native-is-muted/blob/main/isMutedExample.ios.gif?raw=true" alt="Showcase iOS" width="234" height="433">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/popup-plus/react-native-is-muted/blob/main/isMutedExample.android.gif?raw=true" alt="Showcase Android" width="234" height="433"></p>
 
 Detect whether the device is muted (iOS silent switch / Android ringer mode).
 

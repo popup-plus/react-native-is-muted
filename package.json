@@ -26,13 +26,13 @@
     "ringer",
     "silent"
   ],
-  "repository": "https://github.com/NielsOtten/react-native-is-muted",
+  "repository": "https://github.com/popup-plus/react-native-is-muted",
   "bugs": {
-    "url": "https://github.com/NielsOtten/react-native-is-muted/issues"
+    "url": "https://github.com/popup-plus/react-native-is-muted/issues"
   },
   "author": "Niels Otten <tnnielstn@gmail.com> (https://github.com/NielsOtten)",
   "license": "MIT",
-  "homepage": "https://github.com/NielsOtten/react-native-is-muted#readme",
+  "homepage": "https://github.com/popup-plus/react-native-is-muted#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/react": "~19.1.1",
