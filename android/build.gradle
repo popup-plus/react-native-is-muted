@@ -9,12 +9,24 @@ group = 'expo.modules.ismuted'
 version = packageJson.version
 
 android {
-  namespace "expo.modules.ismuted"
+  namespace = "expo.modules.ismuted"
   defaultConfig {
-    versionCode 1
-    versionName packageJson.version
+    versionCode = 1
+    versionName = packageJson.version
   }
   lintOptions {
-    abortOnError false
+    abortOnError = false
   }
+  testOptions {
+    unitTests {
+      includeAndroidResources = true
+    }
+  }
+}
+
+dependencies {
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.robolectric:robolectric:4.13'
+  testImplementation 'androidx.test:core:1.6.1'
+  testImplementation 'androidx.test.ext:junit:1.2.1'
 }

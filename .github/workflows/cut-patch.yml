@@ -7,8 +7,16 @@ permissions:
   contents: write
   id-token: write
 
+concurrency:
+  group: publish-npm
+  cancel-in-progress: false
+
 jobs:
+  tests:
+    uses: ./.github/workflows/tests.yml
+
   cut-patch:
+    needs: tests
     runs-on: ubuntu-latest
     environment:
       name: npm
@@ -38,10 +46,6 @@ jobs:
       - run: npm install -g npm@latest
 
       - run: npm ci
-
-      - run: npm run lint
-
-      - run: npm test -- --passWithNoTests
 
       - name: Bump patch
         id: bump

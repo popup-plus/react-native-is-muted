@@ -19,6 +19,11 @@ build/**/*.map
 .github/
 .gitattributes
 .editorconfig
+babel.config.js
+
+# Tests
+src/__tests__/
+android/src/test/
 
 # Misc
 .DS_Store

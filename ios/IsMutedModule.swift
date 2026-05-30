@@ -1,3 +1,7 @@
+// No automated iOS tests: end-to-end mute detection depends on
+// AudioServicesPlaySystemSound timing against a physical ringer switch, which the
+// simulator cannot reproduce. The MuteChecker timing logic is verified manually via
+// the example app on a device — see CONTRIBUTING.md for the procedure.
 import AudioToolbox
 import ExpoModulesCore
 
