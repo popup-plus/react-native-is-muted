@@ -68,17 +68,18 @@ jobs:
             exit 1
           fi
 
-      - name: Create release branch
-        run: git checkout -b "${{ steps.branch.outputs.name }}"
-
-      - name: Commit and tag
+      - name: Commit and tag on main
         run: |
           git add package.json package-lock.json
           git commit -m "chore: release v${{ steps.bump.outputs.version }}"
           git tag -a "v${{ steps.bump.outputs.version }}" -m "v${{ steps.bump.outputs.version }}"
 
-      - name: Push branch and tag
+      - name: Create release branch
+        run: git branch "${{ steps.branch.outputs.name }}"
+
+      - name: Push main, branch, and tag
         run: |
+          git push origin HEAD:main
           git push origin "${{ steps.branch.outputs.name }}"
           git push origin "v${{ steps.bump.outputs.version }}"
 
