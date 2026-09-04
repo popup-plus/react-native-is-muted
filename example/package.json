@@ -9,13 +9,13 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~57.0.12",
-    "react": "19.1.0",
-    "react-native": "0.81.5"
+    "expo": "~57.0.20",
+    "react": "19.2.3",
+    "react-native": "0.86.3"
   },
   "devDependencies": {
-    "@types/react": "~19.1.0",
-    "typescript": "~5.9.2"
+    "@types/react": "~19.2.4",
+    "typescript": "~6.0.3"
   },
   "private": true,
   "expo": {
